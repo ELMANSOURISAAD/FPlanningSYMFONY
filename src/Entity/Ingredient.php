@@ -4,8 +4,10 @@ namespace App\Entity;
 
 use App\Repository\IngredientRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
 
 #[ORM\Entity(repositoryClass: IngredientRepository::class)]
+#[ApiResource]
 class Ingredient
 {
     #[ORM\Id]
